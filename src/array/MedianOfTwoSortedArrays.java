@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ *https://leetcode.com/problems/median-of-two-sorted-arrays/
+ */
 public class MedianOfTwoSortedArrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         List<Integer> list = new ArrayList<>();
