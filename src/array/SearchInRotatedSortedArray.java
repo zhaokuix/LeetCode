@@ -8,7 +8,7 @@ public class SearchInRotatedSortedArray {
      * 要求查找时间复杂度为O(log n)----二分查找
      * @param nums 数组
      * @param target 目标值
-     * @return
+     * @return 目标值位置
      */
     public static int search(int[] nums, int target) {
         //0,1,2,4,5,6,7
