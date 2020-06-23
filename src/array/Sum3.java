@@ -36,7 +36,7 @@ public class Sum3 {
     }
 
     /**
-     * 方法二、尝试优化
+     * 方法二、尝试优化***********超时了
      * @param nums 数组
      * @return list集合
      */
