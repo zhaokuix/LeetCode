@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/combination-sum/
- *回溯法
+ *回溯法、深度优先搜索
  * result = []
  * def backtrack(路径, 选择列表):
  *     if 满足结束条件:
