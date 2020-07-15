@@ -6,6 +6,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * https://leetcode.com/problems/insert-interval/
+ */
 public class InsertInterval {
     public static int[][] insert(int[][] intervals, int[] newInterval) {
         if (intervals.length == 0){
