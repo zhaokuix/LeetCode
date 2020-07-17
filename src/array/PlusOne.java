@@ -2,6 +2,9 @@ package array;
 
 import java.util.Arrays;
 
+/**
+ * https://leetcode-cn.com/problems/plus-one/
+ */
 public class PlusOne {
     public static int[] plusOne(int[] digits) {
         int[] ans = new int[digits.length + 1];
