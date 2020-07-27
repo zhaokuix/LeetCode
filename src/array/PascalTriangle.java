@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * https://leetcode-cn.com/problems/pascals-triangle/
+ */
 public class PascalTriangle {
     public static List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList<>();

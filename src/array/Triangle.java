@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * https://leetcode-cn.com/problems/triangle/
+ */
 public class Triangle {
     /**
      * 动态规划经典题

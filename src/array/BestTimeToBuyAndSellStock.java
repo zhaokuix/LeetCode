@@ -1,5 +1,8 @@
 package array;
 
+/**
+ * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+ */
 public class BestTimeToBuyAndSellStock {
     /**
      * 暴力循环

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * https://leetcode-cn.com/problems/pascals-triangle-ii/
+ */
 public class PascalTriangleII {
     public static List<Integer> getRow(int rowIndex) {
         rowIndex++;
