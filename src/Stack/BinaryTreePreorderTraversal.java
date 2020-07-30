@@ -2,6 +2,9 @@ package Stack;
 
 import java.util.*;
 
+/**
+ * https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
+ */
 public class BinaryTreePreorderTraversal {
     /**
      * 二叉树前序遍历 中-左-右
