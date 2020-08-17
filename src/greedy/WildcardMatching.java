@@ -67,6 +67,43 @@ public class WildcardMatching {
         return  u == v || v == '?';
     }
 
+    /**
+     * 动态规划
+     * 我们用 dp[i][j] 表示字符串 s 的前 i 个字符和模式 p 的前 j 个字符是否能匹配
+     * 如果p当前为小写字母，那么s必须与p相同 dp[i][j] = dp[i-1][j-1]∩s[i]==p[i]
+     * 如果p当前为为?，那么s没有任何要求 dp[i][j] = dp[i-1][j-1]
+     * 如果p当前为*，那么s没有任何要求，*可以用也可以不用 dp[i][j] = dp[i][j-1]∪dp[i-1][j]
+     * 边界值处理
+     * dp[0][0] = true s和p都是空
+     * dp[i][0] = false p为空s不为空
+     * dp[0][j] p的前j个字符是*号时为true，其它为false
+     * @param s
+     * @param p
+     * @return
+     */
+    public boolean isMatch2(String s, String p) {
+        int sL = s.length(), pL = p.length();
+        boolean[][] dp = new boolean[sL + 1][ pL + 1];
+        dp[0][0] = true;
+        for (int j = 1; j <= pL; j++) {
+            if (p.charAt(j - 1) == '*'){
+                dp[0][j] = true;
+            }else {
+                break;
+            }
+        }
+        for (int i = 1; i <= sL; i++) {
+            for (int j = 1; j <= pL; j++) {
+                if (p.charAt(j - 1) == '*'){
+                    dp[i][j] =  dp[i][j-1] || dp[i-1][j];
+                }else if (p.charAt(j - 1) == '?' || p.charAt(j - 1) == s.charAt(i - 1)){
+                    dp[i][j] = dp[i-1][j-1];
+                }
+            }
+        }
+        return dp[sL][pL];
+    }
+
     public static void main(String[] args) {
     }
 }
