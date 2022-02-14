@@ -75,7 +75,7 @@ public class Sum3 {
                 if (sum == 0){
                     List<Integer> list = Arrays.asList(nums[i], nums[l], nums[r]);
                     target.add(list);
-                    l++ ;
+                    l++;
                     r--;
                 }else if (sum > 0){
                     r--;
