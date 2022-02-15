@@ -1,5 +1,8 @@
 package LeetCodeHot100.common;
 
+/**
+ * 链表
+ */
 public class ListNode {
     public int val;
     public ListNode next;
