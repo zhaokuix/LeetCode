@@ -8,6 +8,7 @@ import java.util.*;
 public class GroupAnagrams {
 
     /**
+     * 字母异位词分组
      * 先排序，排好序的字母作为key，未排好序的放入value中，组成hashmap，
      * 最后直接在hashmap中取出结果即可
      * @param strs
