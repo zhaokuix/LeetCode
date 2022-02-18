@@ -12,5 +12,8 @@ public class TreeNode {
         this.right = right;
         this.val = val;
     }
+    public TreeNode(int val){
+        this.val = val;
+    }
     public TreeNode(){}
 }
